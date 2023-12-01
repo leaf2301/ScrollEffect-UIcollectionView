@@ -13,6 +13,11 @@
 		E11CF1702B18CFE60089B28C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E11CF16E2B18CFE60089B28C /* Main.storyboard */; };
 		E11CF1722B18CFE70089B28C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E11CF1712B18CFE70089B28C /* Assets.xcassets */; };
 		E11CF1752B18CFE70089B28C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E11CF1732B18CFE70089B28C /* LaunchScreen.storyboard */; };
+		E11CF1822B18D1E80089B28C /* FortniteCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11CF1812B18D1E80089B28C /* FortniteCVCell.swift */; };
+		E1E596272B1992C8004DCD92 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E596262B1992C8004DCD92 /* Color.swift */; };
+		E1E5962A2B19937C004DCD92 /* Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E596292B19937C004DCD92 /* Type.swift */; };
+		E1E5962D2B1994EB004DCD92 /* LayoutAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E5962C2B1994EB004DCD92 /* LayoutAttributes.swift */; };
+		E1E5962F2B19C234004DCD92 /* FlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E5962E2B19C234004DCD92 /* FlowLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		E11CF1712B18CFE70089B28C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E11CF1742B18CFE70089B28C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E11CF1762B18CFE70089B28C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E11CF1812B18D1E80089B28C /* FortniteCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortniteCVCell.swift; sourceTree = "<group>"; };
+		E1E596262B1992C8004DCD92 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		E1E596292B19937C004DCD92 /* Type.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Type.swift; sourceTree = "<group>"; };
+		E1E5962C2B1994EB004DCD92 /* LayoutAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutAttributes.swift; sourceTree = "<group>"; };
+		E1E5962E2B19C234004DCD92 /* FlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,84 @@
 		E11CF1672B18CFE60089B28C /* FortniteAPI */ = {
 			isa = PBXGroup;
 			children = (
-				E11CF1682B18CFE60089B28C /* AppDelegate.swift */,
-				E11CF16A2B18CFE60089B28C /* SceneDelegate.swift */,
-				E11CF16C2B18CFE60089B28C /* ViewController.swift */,
-				E11CF16E2B18CFE60089B28C /* Main.storyboard */,
-				E11CF1712B18CFE70089B28C /* Assets.xcassets */,
-				E11CF1732B18CFE70089B28C /* LaunchScreen.storyboard */,
-				E11CF1762B18CFE70089B28C /* Info.plist */,
+				E1E5962B2B1994DD004DCD92 /* Kayouts */,
+				E1E596282B19936D004DCD92 /* MyUtils */,
+				E1E596252B1992C0004DCD92 /* Extensions */,
+				E11CF17C2B18D00D0089B28C /* Delegates */,
+				E11CF17F2B18D0210089B28C /* Resources */,
+				E11CF17E2B18D0190089B28C /* Storyboard */,
+				E11CF17D2B18D0120089B28C /* Controllers */,
+				E11CF1802B18D1D50089B28C /* Views */,
 			);
 			path = FortniteAPI;
+			sourceTree = "<group>";
+		};
+		E11CF17C2B18D00D0089B28C /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				E11CF1682B18CFE60089B28C /* AppDelegate.swift */,
+				E11CF16A2B18CFE60089B28C /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		E11CF17D2B18D0120089B28C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E11CF16C2B18CFE60089B28C /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E11CF17E2B18D0190089B28C /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				E11CF16E2B18CFE60089B28C /* Main.storyboard */,
+				E11CF1732B18CFE70089B28C /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		E11CF17F2B18D0210089B28C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E11CF1712B18CFE70089B28C /* Assets.xcassets */,
+				E11CF1762B18CFE70089B28C /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E11CF1802B18D1D50089B28C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E11CF1812B18D1E80089B28C /* FortniteCVCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E1E596252B1992C0004DCD92 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E1E596262B1992C8004DCD92 /* Color.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E1E596282B19936D004DCD92 /* MyUtils */ = {
+			isa = PBXGroup;
+			children = (
+				E1E596292B19937C004DCD92 /* Type.swift */,
+			);
+			path = MyUtils;
+			sourceTree = "<group>";
+		};
+		E1E5962B2B1994DD004DCD92 /* Kayouts */ = {
+			isa = PBXGroup;
+			children = (
+				E1E5962C2B1994EB004DCD92 /* LayoutAttributes.swift */,
+				E1E5962E2B19C234004DCD92 /* FlowLayout.swift */,
+			);
+			path = Kayouts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +218,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E11CF16D2B18CFE60089B28C /* ViewController.swift in Sources */,
+				E1E5962F2B19C234004DCD92 /* FlowLayout.swift in Sources */,
+				E1E5962D2B1994EB004DCD92 /* LayoutAttributes.swift in Sources */,
 				E11CF1692B18CFE60089B28C /* AppDelegate.swift in Sources */,
 				E11CF16B2B18CFE60089B28C /* SceneDelegate.swift in Sources */,
+				E1E596272B1992C8004DCD92 /* Color.swift in Sources */,
+				E11CF1822B18D1E80089B28C /* FortniteCVCell.swift in Sources */,
+				E1E5962A2B19937C004DCD92 /* Type.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,10 +378,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = BN2J773XP7;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = FortniteAPI/Info.plist;
+				INFOPLIST_FILE = FortniteAPI/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -322,10 +405,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = BN2J773XP7;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = FortniteAPI/Info.plist;
+				INFOPLIST_FILE = FortniteAPI/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
